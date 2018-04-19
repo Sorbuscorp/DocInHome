@@ -11,3 +11,7 @@ onload=function(){
     
 }
 
+makesomething=function(){
+    alert("something");
+}
+
