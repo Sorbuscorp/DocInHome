@@ -1,0 +1,148 @@
+body{
+    background: url("http://newpackfon.ru/uploads/images/k/a/r/kartinki_s_meditsinoj_svjazannie.jpg");
+    background-size: cover;
+    
+    
+}
+html{
+    height: 100%;
+}
+
+/* Шапка сайта */
+header{
+    margin: 0;
+    width: 98%;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    border-bottom: 2px solid silver;
+    padding: 1%;
+}
+
+
+#entry{
+    margin-left: 970px;
+}
+#registration{
+    margin-left: 50px;
+}
+
+#entry:hover, #registration:hover{
+   
+    color: darksalmon;
+    cursor: pointer;
+}
+/* Футер */
+
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 98%;
+    border-top: 2px solid silver;
+    margin-top: 10px;
+    padding: 1%;
+    text-align: center;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Меню*/
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    transition: .4s ease-in-out;
+  }
+
+  .topmenu {
+    backface-visibility: hidden;
+    background: rgba(255,255,255,.8);
+  }
+  .topmenu > li {
+    display: inline-block;
+    position: relative;
+  }
+
+  .topmenu > li > a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 30px;
+    font-weight: lighter;
+    color: #aa131f;
+    text-transform: uppercase;
+  }
+
+  .down:after {
+    content: "\f107";
+    margin-left: 8px;
+    font-family: FontAwesome;
+  }
+  .topmenu li a:hover { color: rgb(32, 12, 12); }
+
+  .submenu {
+    background: white;
+    border: 2px solid #c90b0b;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 150px;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+  }
+
+  .topmenu > li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+  }
+  .submenu li a {
+    color: #4d4949;
+    font-size: 13px;
+    line-height: 36px;
+    padding: 0 25px;
+    font-family: 'Kurale', serif;
+  }
+
+  /*Форма регистрации*/
+  #Reg{
+    margin-left: 500px;
+    margin-top: 70px;
+    width: 300px;
+    height: 390px;
+    background-color: rgb(236, 225, 225); 
+    opacity: 0.9;
+    color: rgb(44, 43, 43);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 3px solid salmon;
+    border-radius: 6px;
+    box-shadow: 1px 1px 12px 3px rgb(170, 164, 164);
+  }
+  #Reg div, label, input{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: -9px;
+    margin-left: 10px;
+  }
+  #Reg ul{
+    display: block;
+    margin-left: 10px;
+    padding: 0;
+  }
+  #log li, #passw li, #isDoctor li, #name2 li{
+    display: inline-block;
+   
+  }
